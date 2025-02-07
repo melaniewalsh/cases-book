@@ -1,0 +1,30 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: a23c3cd2-b0d0-4e74-bbd2-a1b1f3404043
+  title: Computational Archival Science (CAS) Book
+  # description:
+  # keywords: []
+  authors: [Melanie Walsh, TALENT Network ]
+  plugins:
+    - src/landing-page.mjs
+  # github:
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: index.md
+    - title: Student Case Studies
+      children:
+        - file: certificates-of-freedom/intro.ipynb
+          title: Introduction
+        - file: certificates-of-freedom/part1.ipynb
+          title: Data Analysis — Part 1
+        - file: certificates-of-freedom/part2.ipynb
+          title: Data Analysis — Part 2
+        - file: certificates-of-freedom/part3.ipynb
+          title: Data Analysis — Part 3
+    - title: Tutorials
+site:
+  template: book-theme
+  options:
+    favicon: images/cases_logo.png
+    logo: images/cases_logo.png
